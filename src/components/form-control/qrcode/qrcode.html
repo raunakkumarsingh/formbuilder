@@ -1,0 +1,37 @@
+<ng-container *ngIf="control as control">
+    <asw-qr-code #parent [width]="control.width" 
+        [height]="control.height"
+        [qrData]="control.value" 
+        [outerMargin]="control.outerMargin"
+        [logo]="control.logo" [allowEmptyString]="true"
+        [density]="control.density" 
+        [logoStyle]="control.logoStyle">
+    </asw-qr-code>
+    <ng-template [ngIf]="isPreviewTemplate">
+        <div class="row mb-2">
+            <div class="col-md-12">
+                <button mat-icon-button 
+                        type="button" 
+                        matTooltip="Duplicate" 
+                        [matTooltipPosition]="'below'" 
+                        (click)="duplicateQrCodeControl(control)">
+                    <mat-icon>content_copy</mat-icon>
+                </button>
+                <button mat-icon-button 
+                        type="button" 
+                        matTooltip="Edit" 
+                        [matTooltipPosition]="'below'" 
+                        (click)="editQrCodeDialog(control, controlIndex)">
+                    <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-icon-button 
+                        type="button" 
+                        matTooltip="Delete" 
+                        [matTooltipPosition]="'below'" 
+                        (click)="deleteQrCodeDialog(control, controlIndex)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </div>                                            
+        </div>
+    </ng-template>
+</ng-container>

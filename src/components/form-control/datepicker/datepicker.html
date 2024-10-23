@@ -1,0 +1,48 @@
+<ng-container *ngIf="control as control">
+    <mat-form-field [appearance]="control.style" class="asw-mat-form-field {{control.customClass}}">
+        <mat-label>{{control.label}}</mat-label>
+        <input matInput [matDatepicker]="picker" 
+                        #input="ngModel"
+                        [id]="control.id"
+                        [(ngModel)]="control.value"
+                        [matTooltip]="control.tooltip"
+                        [placeholder]="control.label"
+                        (dateChange)="onDateChange(control)"
+                        [min]="control.minDate" 
+                        [max]="control.maxDate"
+                        [required]="control.isRequired"
+                        [disabled]="control.isDisabled ? true : false">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+        <mat-error class="asw-mat-error" *ngIf="input.invalid && (input.dirty || input.touched)">
+            <ng-container class="asw-mat-error" *ngIf="input?.errors?.required">
+                {{control.label}} is required
+            </ng-container>
+        </mat-error>
+    </mat-form-field>
+    <div class="row" *ngIf="isPreviewTemplate">
+        <div class="col-md-12">
+            <button mat-icon-button 
+                    type="button" 
+                    matTooltip="Duplicate" 
+                    [matTooltipPosition]="'below'" 
+                    (click)="duplicateDatepickerControl(control)">
+                <mat-icon>content_copy</mat-icon>
+            </button>
+            <button mat-icon-button 
+                    type="button" 
+                    matTooltip="Edit" 
+                    [matTooltipPosition]="'below'" 
+                    (click)="editDatepickerDialog(control, controlIndex)">
+                <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-icon-button 
+                    type="button" 
+                    matTooltip="Delete" 
+                    [matTooltipPosition]="'below'" 
+                    (click)="deleteDatepickerDialog(control, controlIndex)">
+                <mat-icon>delete</mat-icon>
+            </button>
+        </div>                                            
+    </div>
+</ng-container>

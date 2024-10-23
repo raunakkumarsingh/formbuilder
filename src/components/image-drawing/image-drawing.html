@@ -1,0 +1,113 @@
+<h4 mat-dialog-title>Edit Property</h4>
+<mat-divider></mat-divider>
+<form #aswEditPropertyForm="ngForm" (ngSubmit)="onSubmit(aswEditPropertyForm)" novalidate>
+    <mat-dialog-content class="mat-typography">
+        <div class="asw-drawing-card">
+            <div class="loading" *ngIf="isLoading">
+                <ng-container *ngTemplateOutlet="loadingTemplate ? loadingTemplate : defaultLoading"></ng-container>
+            </div>
+            <div class="error" *ngIf="hasError">
+                <ng-container *ngTemplateOutlet="errorTemplate ? errorTemplate : defaultError"></ng-container>
+            </div>
+            
+            <ng-template #defaultLoading><p>{{ loadingText }}</p></ng-template>
+            <ng-template #defaultError> <p>{{ errorMessage }}</p> </ng-template>
+                
+            <div class="asw-drawing">
+                <canvas #aswCanvas id="aswCanvas" class="asw-drawing-canvas"></canvas>
+            </div>
+        </div>
+        <div class="row asw-pt-10" *ngIf="!isLoading">
+            <div class="col-md-12">
+                <div class="asw-buttons">
+                    <button class="asw-image-load-btn" type="button"
+                        *ngIf="enableLoadAnotherImage && !hasImage" 
+                        (click)="fileInput.click();"
+                        matTooltip="Load image">
+                        <input style="display: none" 
+                                type="file" 
+                                #fileInput 
+                                (change)="importPhotoFromFile($event)"
+                                accept="image/*"/>
+                        Load image
+                    </button>
+                    <button class="asw-image-load-btn" type="button"
+                            *ngIf="enableRemoveImage && hasImage" 
+                            (click)="removeImage()"
+                            matTooltip="Remove image">
+                            Remove image
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <ul class="asw-options">
+                    <li class="option tool" style="display: none"
+                        [class.selected]="currentTool == 'brush'" 
+                        (click)="selectTool('brush')"
+                        id="brush">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14.445" height="14.462" viewBox="0 0 14.445 14.462">
+                            <path id="Path_153" data-name="Path 153" d="M8.319,8.378l6.014-6.535a.4.4,0,0,0-.024-.577L13.155.111a.4.4,0,0,0-.553,0L6.066,6.125a.4.4,0,0,0,0,.577L7.742,8.378a.4.4,0,0,0,.577,0Zm-3.44-.89,2.093,2.1a.8.8,0,0,1,.249.457v.393a3.208,3.208,0,0,1-.938,2.277,6.223,6.223,0,0,1-4.739,1.732,2.326,2.326,0,0,1-1.427-.481.4.4,0,0,1-.048-.505,4.772,4.772,0,0,0,.714-2.609A3.626,3.626,0,0,1,1.744,8.17a3.208,3.208,0,0,1,2.269-.938,3.134,3.134,0,0,1,.393,0A.874.874,0,0,1,4.879,7.488Z" fill="#5a6168" fill-rule="evenodd"/>
+                        </svg>
+                        <span>Brush</span>
+                    </li>
+                    <li class="option">
+                        <input type="range" 
+                            [(ngModel)]="currentSize"
+                            #input="ngModel"
+                            name="sliders"
+                            id="size-slider"
+                            min="1"
+                            (change)="selectDrawingSize(currentSize)"
+                            max="30">
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="asw-pb-10">
+                    <mat-button-toggle-group class="asw-width">
+                        <mat-button-toggle matTooltip="Undo"
+                                [disabled]="!canUndo"
+                                class="asw-width"
+                                (change)="undo()">
+                            Undo
+                        </mat-button-toggle>
+                        <mat-button-toggle matTooltip="Redo"
+                                [disabled]="!canRedo"
+                                class="asw-width"
+                                (change)="redo()">
+                            Redo
+                        </mat-button-toggle>
+                    </mat-button-toggle-group>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="asw-color-picker">
+                    <div *ngFor="let colorName of colorsName" 
+                        [class.selected]="currentColor == colorName" 
+                        class="color"
+                        [ngClass]="colorName"
+                        [style.background]="colors[colorName]" 
+                        title="{{colorName}}"
+                        (click)="selectColor(colorName)">
+                    </div>
+                </div>                
+            </div>
+            <div class="col-md-6 asw-buttons">
+                <button class="asw-clear-canvas" type="button"
+                (click)="clearCanvas()">Clear Canvas</button>
+            </div>
+        </div>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+        <button type="button"
+                class="btn btn-danger mr-2 me-2 mb-1"
+                (click)="onNoClick()">
+            No
+        </button>
+        <button type="submit"
+                class="btn btn-primary mb-1"
+                cdkFocusInitial>
+            Yes
+        </button>
+    </mat-dialog-actions>
+</form>

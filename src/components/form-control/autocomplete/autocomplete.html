@@ -1,0 +1,52 @@
+<ng-container *ngIf="control as control">
+    <mat-form-field [appearance]="control.style" class="asw-mat-form-field {{control.customClass}}">
+        <mat-label>{{control.label}}</mat-label>
+        <input [placeholder]="control.label"
+               [id]="control.id"
+               [matAutocomplete]="auto"
+               matInput
+               [(ngModel)]="control.value"                    
+                #input="ngModel"
+               [matTooltip]="control.tooltip"
+               (ngModelChange)="filteredOptions = filter(control)"
+               [required]="control.isRequired"
+               [disabled]="control.isDisabled ? true : false">
+        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+            <mat-option *ngFor="let option of filteredOptions" [value]="option.key">
+                {{option.value}}
+            </mat-option>
+        </mat-autocomplete>
+        <mat-error class="asw-mat-error" *ngIf="input.invalid && (input.dirty || input.touched)">
+            <ng-container *ngIf="input?.errors?.required">
+                {{control.label}} is required
+            </ng-container>
+        </mat-error>
+    </mat-form-field>
+    <ng-template [ngIf]="isPreviewTemplate">
+        <div class="row">
+            <div class="col-md-12">
+                <button mat-icon-button
+                        type="button" 
+                        matTooltip="Duplicate" 
+                        [matTooltipPosition]="'below'"
+                        (click)="duplicateAutocompleteControl(control)">
+                    <mat-icon>content_copy</mat-icon>
+                </button>
+                <button mat-icon-button 
+                        type="button" 
+                        matTooltip="Edit" 
+                        [matTooltipPosition]="'below'" 
+                        (click)="editAutocompleteDialog(control, controlIndex)">
+                    <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-icon-button 
+                        type="button" 
+                        matTooltip="Delete" 
+                        [matTooltipPosition]="'below'" 
+                        (click)="deleteAutocompleteDialog(control, controlIndex)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </div>                                            
+        </div>
+    </ng-template>    
+</ng-container>

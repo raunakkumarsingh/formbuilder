@@ -1,0 +1,76 @@
+h2 {
+    margin: 0;
+}
+.asw-list {
+    min-height: 595px;
+    border-radius: 4px;
+    display: block;
+}
+
+.asw-expansion-panel-header {
+    background-color: rgba(0, 0, 0, 0.03) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    font-weight: 450;
+    height: 48px;
+    border-radius: initial;
+}
+
+:host ::ng-deep .mat-expansion-panel-body {
+    padding: 16px 24px 16px !important;
+}
+
+.asw-box {
+    padding: 7px 14px;
+    border-bottom: solid 1px #ccc;
+    color: rgba(0, 0, 0, 0.87);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    cursor: move;
+    background: white;
+    font-size: 14px;
+}
+
+.alert {
+    padding: 0.4rem 0.4rem !important;
+    margin-bottom: 0.4rem !important;
+    
+}
+.asw-alert-primary {
+    color: #fff !important;
+    background-color: #2780e3 !important;
+    border-color: #2780e3 !important;
+    cursor: move;
+}
+
+.asw-card-header {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.asw-alert-info {
+    color: #502c61 !important;
+    background-color: #ebddf1 !important;
+    border-color: #e2cfec !important;
+}
+
+.cdk-drag-preview {
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+    opacity: 0;
+}
+
+.cdk-drag-animating {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.asw-list.cdk-drop-list-dragging .asw-box:not(.cdk-drag-placeholder) {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}

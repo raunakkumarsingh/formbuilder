@@ -1,0 +1,108 @@
+<h4 mat-dialog-title>Edit Property</h4>
+<mat-divider></mat-divider>
+<form [formGroup]="aswDigitalForm" (ngSubmit)="onSubmit()">
+    <mat-dialog-content class="mat-typography">
+        <div class="asw-full-width"><br>
+            <div class="row">
+                <div class="col-md-12">
+                    <mat-form-field appearance="outline" class="asw-mat-form-field">
+                        <mat-label>Label</mat-label>
+                        <input matInput type="text"
+                                        name="label"
+                                        placeholder="Enter label"
+                                        matTooltip="Enter label"
+                                        formControlName="label">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <mat-form-field appearance="outline" class="asw-mat-form-field">
+                        <mat-label>Image url</mat-label>
+                        <input matInput type="text"
+                                        name="label"
+                                        placeholder="Enter image url"
+                                        matTooltip="Enter label"
+                                        formControlName="imageUrl">
+                    </mat-form-field>
+                </div>
+                <div class="col-md-6">
+                    <mat-form-field appearance="outline" class="asw-mat-form-field">
+                        <mat-label>Column Size</mat-label>
+                        <mat-select formControlName="column" matTooltip="Select column size">
+                            <mat-option *ngFor="let column of constants.columns" [value]="column.value">
+                                {{column.label}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <mat-form-field appearance="outline" class="asw-mat-form-field">
+                        <mat-label>Height</mat-label>
+                        <input matInput type="text"
+                                        name="label"
+                                        min="0" 
+                                        max="600"
+                                        placeholder="Height"
+                                        (keypress)="objectUtils.keyPressNumbersWithDecimal($event)"
+                                        matTooltip="Height"
+                                        formControlName="height">
+                        <mat-error class="asw-mat-error" *ngFor="let validation of constants.accountValidationMessages.height">
+                            <ng-container class="asw-mat-error" *ngIf="aswDigitalForm.get('height')?.hasError(validation.type) && (aswDigitalForm.get('height')?.dirty || aswDigitalForm.get('height')?.touched)">
+                                {{validation.message}}
+                            </ng-container>
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-md-6">
+                    <mat-form-field appearance="outline" class="asw-mat-form-field">
+                        <mat-label>Width</mat-label>
+                        <input matInput type="text"
+                                        name="label"
+                                        min="0" 
+                                        max="600"
+                                        placeholder="Width"
+                                        (keypress)="objectUtils.keyPressNumbersWithDecimal($event)"
+                                        matTooltip="Width"
+                                        formControlName="width">
+                        <mat-error class="asw-mat-error" *ngFor="let validation of constants.accountValidationMessages.width">
+                            <ng-container class="asw-mat-error" *ngIf="aswDigitalForm.get('width')?.hasError(validation.type) && (aswDigitalForm.get('width')?.dirty || aswDigitalForm.get('width')?.touched)">
+                                {{validation.message}}
+                            </ng-container>
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    Text style: 
+                    <mat-button-toggle-group formControlName="class" name="fontStyle" aria-label="Font Style">
+                        <mat-button-toggle value="text-left text-start" aria-label="Text align left">
+                            <mat-icon>format_align_left</mat-icon>
+                        </mat-button-toggle>
+                        <mat-button-toggle value="mx-auto text-center" aria-label="Text align center">
+                            <mat-icon>format_align_center</mat-icon>
+                        </mat-button-toggle>
+                        <mat-button-toggle value="text-right text-end" aria-label="Text align right">
+                            <mat-icon>format_align_right</mat-icon>
+                        </mat-button-toggle>
+                    </mat-button-toggle-group>
+                </div>
+            </div>
+        </div>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+        <button type="button"
+                class="btn btn-danger mr-2 mb-1 me-2"
+                (click)="onNoClick()">
+            No
+        </button>
+        <button type="submit"
+                class="btn btn-primary mb-1"
+                cdkFocusInitial>
+            Yes
+        </button>
+    </mat-dialog-actions>
+</form>

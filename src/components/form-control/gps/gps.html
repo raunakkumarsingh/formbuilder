@@ -1,0 +1,55 @@
+<ng-container *ngIf="control as control">
+    <mat-form-field [appearance]="control.style" class="asw-mat-form-field {{control.customClass}}">
+        <mat-label>{{control.label}}</mat-label>
+        <input matInput
+               [id]="control.id"
+               [placeholder]="control.label"
+               [matAutocomplete]="auto"
+               [(ngModel)]="control.value"
+               #input="ngModel"
+               (ngModelChange)="onChange($event, control)"
+               [matTooltip]="control.tooltip"
+               [required]="control.isRequired"
+               [disabled]="control.isDisabled ? true : false">
+        <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let address of filteredAddress" [value]="address.label">
+                <img class="example-option-img" aria-hidden [src]="address.icon" height="20">
+                <span>{{address.alias}}</span> 
+                <small> {{address.addressName}}</small>
+            </mat-option>
+        </mat-autocomplete>
+        <mat-error class="asw-mat-error" *ngIf="input.invalid && (input.dirty || input.touched)">
+            <ng-container class="asw-mat-error" *ngIf="input?.errors?.required">
+                {{control.label}} is required
+            </ng-container>
+            <ng-container class="asw-mat-error" *ngIf="input?.errors?.searchAddress">
+                Sorry, {{control.value}} did not found.
+            </ng-container>
+        </mat-error>
+    </mat-form-field>
+    <div class="row" *ngIf="isPreviewTemplate">
+        <div class="col-md-12">
+            <button mat-icon-button 
+                    type="button" 
+                    matTooltip="Duplicate" 
+                    [matTooltipPosition]="'below'" 
+                    (click)="duplicateGpsControl(control)">
+                <mat-icon>content_copy</mat-icon>
+            </button>
+            <button mat-icon-button 
+                    type="button" 
+                    matTooltip="Edit" 
+                    [matTooltipPosition]="'below'" 
+                    (click)="editGpsDialog(control, controlIndex)">
+                <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-icon-button 
+                    type="button" 
+                    matTooltip="Delete" 
+                    [matTooltipPosition]="'below'" 
+                    (click)="deleteGpsDialog(control, controlIndex)">
+                <mat-icon>delete</mat-icon>
+            </button>
+        </div>
+    </div>
+</ng-container>

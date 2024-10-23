@@ -1,0 +1,134 @@
+<h4 mat-dialog-title>Crop Uploaded Image</h4>
+<mat-divider></mat-divider>
+<form [formGroup]="aswImageCropForm" (ngSubmit)="onSubmit()">
+    <mat-dialog-content class="mat-typography">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="text-center btn-toolbar mt-2" role="toolbar" aria-label="Image controls toolbar">
+                    <div class="btn-group-vertical" role="group" aria-label="toolbar">
+                        <button type="button" 
+                            class="asw-btn btn btn-outline-primary"
+                            (click)="fileInput.click()"
+                            matTooltip="Load image" 
+                            *ngIf="isImageLoaded">
+                            <input style="display: none" 
+                                    type="file" 
+                                    #fileInput 
+                                    (change)="fileChangeEvent($event)"
+                                    id="imageUpload" 
+                                    accept=".png, .jpg, .jpeg">
+                            <mat-icon>attach_file</mat-icon>
+                        </button>
+                        <button type="button" 
+                                class="asw-btn btn btn-outline-primary"
+                                matTooltip="Remove image"
+                                matTooltipPosition="right"
+                                *ngIf="!isImageLoaded" 
+                                (click)="removeImage()">
+                            <mat-icon>clear</mat-icon>
+                        </button>
+                        <button type="button" 
+                                class="asw-btn btn btn-outline-primary" 
+                                [disabled]="isImageLoaded" 
+                                matTooltip="Left rotate"
+                                matTooltipPosition="right"
+                                (click)="rotateLeft()">
+                            <mat-icon>rotate_left</mat-icon>
+                        </button>
+                        <button type="button" 
+                                class="asw-btn btn btn-outline-primary" 
+                                matTooltip="Right rotate"
+                                matTooltipPosition="right"
+                                [disabled]="isImageLoaded" 
+                                (click)="rotateRight()">
+                            <mat-icon>rotate_right</mat-icon>
+                        </button>
+                        <button type="button" 
+                                class="asw-btn btn btn-outline-primary"
+                                matTooltip="Swap horizontal"
+                                matTooltipPosition="right" 
+                                [disabled]="isImageLoaded" 
+                                (click)="flipHorizontal()">
+                            <mat-icon>swap_horiz</mat-icon>
+                        </button>
+                        <button type="button" 
+                                class="asw-btn btn btn-outline-primary"
+                                matTooltip="Swap vertical"
+                                matTooltipPosition="right" 
+                                [disabled]="isImageLoaded" 
+                                (click)="flipVertical()">
+                            <mat-icon>swap_vert</mat-icon>
+                        </button>
+                        <button type="button" 
+                                class="asw-btn btn btn-outline-primary" 
+                                matTooltip="{{containWithinAspectRatio?'Fill Aspect Ratio':'Contain Within Aspect Ratio'}}"
+                                matTooltipPosition="right"
+                                [disabled]="isImageLoaded" 
+                                (click)="toggleContainWithinAspectRatio()">
+                            <mat-icon>
+                                {{containWithinAspectRatio?'crop_free':'crop_din'}}
+                            </mat-icon>
+                        </button>
+                        <button type="button" 
+                                class="asw-btn btn btn-outline-primary" 
+                                [disabled]="isImageLoaded"
+                                matTooltip="Reset image"
+                                matTooltipPosition="right" 
+                                (click)="resetImage()">
+                            <mat-icon>refresh</mat-icon>
+                        </button>
+                        <button type="button" 
+                                class="asw-btn btn btn-outline-primary"
+                                matTooltip="Zoom out"
+                                matTooltipPosition="right" 
+                                [disabled]="isImageLoaded" 
+                                (click)="zoomOut()">
+                            <mat-icon>zoom_out</mat-icon>
+                        </button>
+                        <button type="button" 
+                                class="asw-btn btn btn-outline-primary"
+                                matTooltip="Zoom in"
+                                matTooltipPosition="right" 
+                                [disabled]="isImageLoaded" 
+                                (click)="zoomIn()">
+                            <mat-icon>zoom_in</mat-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <asw-image-crop
+                    [imageChangedEvent]="imageChangedEvent"
+                    [imageBase64]="control.imageUrl"
+                    [maintainAspectRatio]="true"
+                    [containWithinAspectRatio]="containWithinAspectRatio"
+                    [aspectRatio]="1"
+                    [resizeToWidth]="256"
+                    [onlyScaleDown]="true" 
+                    [roundCropper]="false"
+                    [canvasRotation]="canvasRotation"
+                    [transform]="transform"
+                    [alignImage]="'center'"
+                    [style.display]="showCropper ? null : 'none'"
+                    format="png"
+                    (imageCropped)="imageCropped($event)"
+                    (imageLoaded)="imageLoaded()"
+                    (cropperReady)="cropperReady($event)"
+                    (loadImageFailed)="loadImageFailed()">
+                </asw-image-crop>
+            </div>
+        </div>        
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+        <button type="button"
+                class="btn btn-danger mr-2 mb-1 me-2"
+                (click)="onNoClick()">
+            No
+        </button>
+        <button type="submit"
+                class="btn btn-primary mb-1"
+                cdkFocusInitial>
+            Yes
+        </button>
+    </mat-dialog-actions>
+</form>

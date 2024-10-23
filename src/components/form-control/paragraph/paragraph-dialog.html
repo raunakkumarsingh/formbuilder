@@ -1,0 +1,90 @@
+<h4 mat-dialog-title>Edit Property</h4>
+<form [formGroup]="aswParagraphForm" (ngSubmit)="onSubmit()">
+    <mat-dialog-content class="mat-typography">
+        <div class="asw-full-width"><br>
+            <div class="row">
+                <div class="col-md-12">
+                    <mat-form-field appearance="outline" class="asw-mat-form-field">
+                        <mat-label>Content</mat-label>
+                        <textarea matInput type="text"
+                                        name="label"
+                                        placeholder="Enter Content"
+                                        matTooltip="Enter Content"
+                                        formControlName="label" required></textarea>
+                        <mat-error class="asw-mat-error" *ngFor="let validation of constants.accountValidationMessages.label">
+                            <ng-container class="asw-mat-error" *ngIf="aswParagraphForm.get('label')?.hasError(validation.type) && (aswParagraphForm.get('label')?.dirty || aswParagraphForm.get('label')?.touched)">
+                                {{validation.message}}
+                            </ng-container>
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <mat-form-field appearance="outline" class="asw-mat-form-field">
+                        <mat-label>Custom CSS Class</mat-label>
+                        <input matInput type="text"
+                                        name="customClass"
+                                        placeholder="Custom CSS Class"
+                                        matTooltip="Custom CSS Class"
+                                        formControlName="customClass">
+                    </mat-form-field>
+                </div>
+                <div class="col-md-6">
+                    <mat-form-field appearance="outline" class="asw-mat-form-field">
+                        <mat-label>Type</mat-label>
+                        <mat-select formControlName="subtype">
+                            <mat-option value="p">P</mat-option>
+                            <mat-option value="address">Address</mat-option>
+                            <mat-option value="blockquote">Blockquote</mat-option>
+                            <mat-option value="canvas">Canvas</mat-option>
+                            <mat-option value="output">Output</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <mat-form-field appearance="outline" class="asw-mat-form-field">
+                        <mat-label>Column Size</mat-label>
+                        <mat-select formControlName="column" matTooltip="Select column size">
+                            <mat-option *ngFor="let column of constants.columns" [value]="column.value">
+                                {{column.label}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="col-md-6">
+                    Text style: 
+                    <mat-button-toggle-group formControlName="style" name="fontStyle" aria-label="Font Style">
+                        <mat-button-toggle value="text-left text-start" aria-label="Text align left">
+                            <mat-icon>format_align_left</mat-icon>
+                        </mat-button-toggle>
+                        <mat-button-toggle value="text-center" aria-label="Text align center">
+                            <mat-icon>format_align_center</mat-icon>
+                        </mat-button-toggle>
+                        <mat-button-toggle value="text-right text-end" aria-label="Text align right">
+                            <mat-icon>format_align_right</mat-icon>
+                        </mat-button-toggle>
+                        <mat-button-toggle value="text-justify" aria-label="Text align justify">
+                            <mat-icon>format_align_justify</mat-icon>
+                        </mat-button-toggle>
+                    </mat-button-toggle-group>
+                </div>
+            </div>
+        </div>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+        <button type="button"
+                class="btn btn-danger mr-2 me-2 mb-1"
+                (click)="onNoClick()">
+            No
+        </button>
+        <button type="submit"
+                class="btn btn-primary mb-1"
+                cdkFocusInitial>
+            Yes
+        </button>
+    </mat-dialog-actions>
+</form>
+

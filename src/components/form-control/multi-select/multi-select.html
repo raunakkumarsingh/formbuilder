@@ -1,0 +1,49 @@
+<ng-container *ngIf="control as control">
+    <mat-form-field [appearance]="control.style" class="asw-mat-form-field {{control.customClass}}">
+        <mat-label>{{control.label}}</mat-label>
+        <mat-select [placeholder]="control.label" 
+            [(ngModel)]="control.value"
+            [id]="control.id"
+            #input="ngModel" 
+            multiple 
+            (selectionChange)="onSelectionChange(control)"
+            [required]="control.isRequired"
+            [disabled]="control.isDisabled ? true : false">
+            <mat-option *ngFor="let option of control.options" [value]="option.key">
+                {{ option.value }}
+            </mat-option>
+        </mat-select>
+        <mat-error class="asw-mat-error" *ngIf="input.invalid && (input.dirty || input.touched)">
+            <ng-container class="asw-mat-error" *ngIf="input?.errors?.required">
+                {{control.label}} is required
+            </ng-container>
+        </mat-error>
+    </mat-form-field>
+    <ng-template [ngIf]="isPreviewTemplate">
+        <div class="row">
+            <div class="col-md-12">
+                <button mat-icon-button 
+                        type="button" 
+                        matTooltip="Duplicate" 
+                        [matTooltipPosition]="'below'" 
+                        (click)="duplicateMultiSelectControl(control)">
+                    <mat-icon>content_copy</mat-icon>
+                </button>
+                <button mat-icon-button 
+                        type="button" 
+                        matTooltip="Edit" 
+                        [matTooltipPosition]="'below'" 
+                        (click)="editMultiSelectDialog(control, controlIndex)">
+                    <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-icon-button 
+                        type="button" 
+                        matTooltip="Delete" 
+                        [matTooltipPosition]="'below'" 
+                        (click)="deleteMultiSelectDialog(control, controlIndex)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </div>                                            
+        </div>
+    </ng-template>    
+</ng-container>

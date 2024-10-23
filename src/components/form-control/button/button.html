@@ -1,0 +1,76 @@
+<div class="row">
+    <div class="col-md-12">
+        <ng-container *ngIf="control as control">
+            <ng-container [ngSwitch]="control.style">
+                <ng-container *ngSwitchCase="'mat-button'">
+                    <button mat-button 
+                            [color]="control.color"
+                            [id]="control.id"
+                            [class]="control.customClass"
+                            [type]="control.type"
+                            [matTooltip]="control.tooltip"
+                            (click)="buttonClick(control.type)"
+                            >{{control.label}}</button>
+                </ng-container>
+                <ng-container *ngSwitchCase="'mat-raised-button'">
+                    <button mat-raised-button 
+                            [color]="control.color"
+                            [id]="control.id"
+                            [class]="control.customClass"
+                            [type]="control.type"
+                            [matTooltip]="control.tooltip"
+                            (click)="buttonClick(control.type)"
+                            >{{control.label}}</button>
+                </ng-container>
+                <ng-container *ngSwitchCase="'mat-stroked-button'">
+                    <button mat-stroked-button 
+                            [color]="control.color"
+                            [id]="control.id"
+                            [class]="control.customClass"
+                            [type]="control.type"
+                            [matTooltip]="control.tooltip"
+                            (click)="buttonClick(control.type)"
+                            >{{control.label}}</button>
+                </ng-container>
+                <ng-container *ngSwitchCase="'mat-flat-button'">
+                    <button mat-flat-button 
+                            [color]="control.color"
+                            [id]="control.id"
+                            [class]="control.customClass"
+                            [type]="control.type"
+                            [matTooltip]="control.tooltip"
+                            (click)="buttonClick(control.type)">
+                        {{control.label}}
+                    </button>
+                </ng-container>
+            </ng-container>
+            <ng-template [ngIf]="isPreviewTemplate">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button"
+                                mat-icon-button 
+                                matTooltip="Duplicate" 
+                                [matTooltipPosition]="'below'" 
+                                (click)="duplicateButtonControl(control)">
+                            <mat-icon>content_copy</mat-icon>
+                        </button>
+                        <button mat-icon-button 
+                                type="button" 
+                                matTooltip="Edit" 
+                                [matTooltipPosition]="'below'" 
+                                (click)="editButtonDialog(control, controlIndex)">
+                            <mat-icon>edit</mat-icon>
+                        </button>
+                        <button mat-icon-button 
+                                type="button" 
+                                matTooltip="Delete" 
+                                [matTooltipPosition]="'below'" 
+                                (click)="deleteButtonDialog(control, controlIndex)">
+                            <mat-icon>delete</mat-icon>
+                        </button>
+                    </div>
+                </div>
+            </ng-template>    
+        </ng-container>
+    </div>
+</div>
