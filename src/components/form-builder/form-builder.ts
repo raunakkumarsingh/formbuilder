@@ -86,7 +86,7 @@ export class AswFormBuilder implements OnInit, OnChanges {
 
     previewJsonData(): void {
         const dialogRef = this.dialog.open(AswJsonPreviewDialog, {
-            disableClose: true,
+            disableClose: false,
             width: '744px',
             data: this.formContainer
         });

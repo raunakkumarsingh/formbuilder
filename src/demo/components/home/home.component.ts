@@ -70,6 +70,12 @@ export class HomeComponent implements OnInit {
     previewTemplate(data: any): void {
         this.aswSettingsService.previewData = data;
         this.router.navigate(['preview-template']);
+        // const url = this.router.serializeUrl(
+        //     this.router.createUrlTree(['/preview-template'])
+        //   );
+        
+        //   // Open the new tab with the generated URL
+        //   window.open(url, '_blank');
     }
 
     buttonClick(data: any): void {

@@ -1,0 +1,3468 @@
+
+> @asoftwareworld/form-builder@5.1.1 start
+> ng serve --host 0.0.0.0 --port 4200
+
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+- Generating browser application bundles (phase: setup)...
+    TypeScript compiler options "target" and "useDefineForClassFields" are set to "ES2022" and "false" respectively by the Angular CLI. To control ECMA version and features use the Browerslist configuration. For more information, see https://angular.io/guide/build#configuring-browser-compatibility
+    NOTE: You can set the "target" to "ES2022" in the project's tsconfig to remove this warning.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files   | Names         |  Raw Size
+vendor.js             | vendor        |   6.27 MB |
+main.js               | main          |   1.19 MB |
+polyfills.js          | polyfills     | 347.64 kB |
+styles.css, styles.js | styles        | 322.58 kB |
+runtime.js            | runtime       |   6.53 kB |
+
+| Initial Total |   8.12 MB
+
+Build at: 2024-10-24T07:46:49.326Z - Hash: eb798bfb948e0ad6 - Time: 26132ms
+
+Warning: /home/ubuntu/formbuilder/src/components/image-drawing/image-drawing.ts depends on 'fabric'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+
+
+** Angular Live Development Server is listening on 0.0.0.0:4200, open your browser on http://localhost:4200/ **
+
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:01:34.565Z - Hash: 25de3ce1a146b00b - Time: 7266ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:01:36.340Z - Hash: bfab21a834cf5a22 - Time: 1579ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:01:39.210Z - Hash: 655ba8031e9874c0 - Time: 1571ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:11:07.059Z - Hash: 9648e5457f2ab41a - Time: 2340ms
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:10:12 - error TS2564: Property 'sanitizedHtml' has no initializer and is not definitely assigned in the constructor.
+
+10     public sanitizedHtml: SafeHtml;
+              ~~~~~~~~~~~~~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:11:18.180Z - Hash: 256f51f37c6bf679 - Time: 1400ms
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:10:12 - error TS2564: Property 'sanitizedHtml' has no initializer and is not definitely assigned in the constructor.
+
+10     public sanitizedHtml: SafeHtml;
+              ~~~~~~~~~~~~~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:12:27.787Z - Hash: aa409a7792a2c83a - Time: 1946ms
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:10:12 - error TS2564: Property 'sanitizedHtml' has no initializer and is not definitely assigned in the constructor.
+
+10     public sanitizedHtml: SafeHtml;
+              ~~~~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:11:12 - error TS2300: Duplicate identifier 'sanitizedHtml'.
+
+11     public sanitizedHtml: SafeHtml = '';
+              ~~~~~~~~~~~~~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:12:29.424Z - Hash: bfb2c82060021d87 - Time: 1508ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:12:59.372Z - Hash: cc74b6ad9e28e8f0 - Time: 1389ms
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.html:2:29 - error TS2339: Property 'sanitizedHtml' does not exist on type 'AswJsonPreviewDialog'.
+
+2     <pre><code [innerHTML]="sanitizedHtml"></code></pre>
+                              ~~~~~~~~~~~~~
+
+  src/components/form-control/json-preview-dialog/json-preview-dialog.ts:14:18
+    14     templateUrl: './json-preview-dialog.html',
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component AswJsonPreviewDialog.
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:13:42.035Z - Hash: ba06045181015d8f - Time: 1737ms
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.html:2:29 - error TS2339: Property 'sanitizedHtml' does not exist on type 'AswJsonPreviewDialog'.
+
+2     <pre><code [innerHTML]="sanitizedHtml"></code></pre>
+                              ~~~~~~~~~~~~~
+
+  src/components/form-control/json-preview-dialog/json-preview-dialog.ts:14:18
+    14     templateUrl: './json-preview-dialog.html',
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component AswJsonPreviewDialog.
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:13:45.925Z - Hash: f839ffd2614d220c - Time: 1249ms
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.html:2:29 - error TS2339: Property 'sanitizedHtml' does not exist on type 'AswJsonPreviewDialog'.
+
+2     <pre><code [innerHTML]="sanitizedHtml"></code></pre>
+                              ~~~~~~~~~~~~~
+
+  src/components/form-control/json-preview-dialog/json-preview-dialog.ts:14:18
+    14     templateUrl: './json-preview-dialog.html',
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component AswJsonPreviewDialog.
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:13:58.398Z - Hash: f4b0f7ad1bbab068 - Time: 1276ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:23:48.495Z - Hash: a8bcd6999e10369c - Time: 4044ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:23:52.945Z - Hash: 20755abc23f4a347 - Time: 1360ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:28:41.632Z - Hash: a291130b4342e781 - Time: 2750ms
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.html:2:37 - error TS2339: Property 'sanitizedHtml' does not exist on type 'AswJsonPreviewDialog'.
+
+2     <pre id="jsonPreviewContent">{{ sanitizedHtml }}</pre>
+                                      ~~~~~~~~~~~~~
+
+  src/components/form-control/json-preview-dialog/json-preview-dialog.ts:6:18
+    6     templateUrl: './json-preview-dialog.html',
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component AswJsonPreviewDialog.
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:28:58.245Z - Hash: f8577f942c48b1a1 - Time: 1469ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:32:04.929Z - Hash: 9166bd4c2dd39e82 - Time: 1865ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:32:10.080Z - Hash: 939b678acbba0469 - Time: 1279ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:32:31.586Z - Hash: 37599fc529d9fa73 - Time: 1243ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:32:54.680Z - Hash: 7fc8f6ac7fddaf05 - Time: 1264ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:32:56.098Z - Hash: 419268a94b265ea1 - Time: 1195ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:34:55.080Z - Hash: f82b0b78f7adf622 - Time: 1677ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:36:22.286Z - Hash: 1f27dda53cea49cb - Time: 1615ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:37:30.891Z - Hash: aa5964ec027cfacf - Time: 1661ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:39:46.258Z - Hash: 7f755c8433020a30 - Time: 1631ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:39:56.399Z - Hash: fad37caea1bd74c3 - Time: 1156ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:40:08.218Z - Hash: c958ffa23a4031cd - Time: 1259ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:40:12.562Z - Hash: f3207683674f134c - Time: 1319ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:40:28.263Z - Hash: fad37caea1bd74c3 - Time: 1162ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:40:31.097Z - Hash: 5f3bfef08393ad1e - Time: 1207ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:40:33.184Z - Hash: fad37caea1bd74c3 - Time: 1064ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:42:34.062Z - Hash: 60647cb47108ff8d - Time: 1602ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:42:36.865Z - Hash: 7ebf8878f787d2f3 - Time: 1237ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:42:40.077Z - Hash: 114c6d717af4c42f - Time: 1115ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:42:49.862Z - Hash: fad37caea1bd74c3 - Time: 1097ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:47:07.683Z - Hash: 2458590f22355f38 - Time: 7826ms
+
+./src/components/form-builder/form-builder.ts:932:39-59 - Error: export 'AswJsonPreviewDialog' (imported as 'AswJsonPreviewDialog') was not found in '@asoftwareworld/form-builder/form-control/json-preview-dialog' (possible exports: AswJsonPreviewDialogModule)
+
+./src/components/form-control/json-preview-dialog/json-preview-dialog.ts - Error: Module build failed (from ./node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):
+SyntaxError: /home/ubuntu/formbuilder/src/components/form-control/json-preview-dialog/json-preview-dialog.ts: Unexpected reserved word 'let'. (4:4)
+
+  2 | JsonData();
+  3 | void {
+> 4 |     let, htmlCode = '',
+    |     ^
+  5 |     let, currentRowColumnSum = 0,
+  6 |     let, currentRowHtml = '',
+  7 |     this: .data.forEach((control, index) => {
+
+Error: src/components/form-builder/form-builder.module.ts:73:9 - error NG6002: 'AswJsonPreviewDialogModule' does not appear to be an NgModule class.
+
+73         AswJsonPreviewDialogModule,
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/components/form-control/json-preview-dialog/json-preview-dialog.module.ts:29:14
+    29 export class AswJsonPreviewDialogModule { }
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Is it missing an @NgModule annotation?
+
+
+Error: src/components/form-builder/form-builder.ts:13:10 - error TS2724: '"@asoftwareworld/form-builder/form-control/json-preview-dialog"' has no exported member named 'AswJsonPreviewDialog'. Did you mean 'AswJsonPreviewDialogModule'?
+
+13 import { AswJsonPreviewDialog } from '@asoftwareworld/form-builder/form-control/json-preview-dialog';
+            ~~~~~~~~~~~~~~~~~~~~
+
+  src/components/form-control/json-preview-dialog/json-preview-dialog.module.ts:29:14
+    29 export class AswJsonPreviewDialogModule { }
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    'AswJsonPreviewDialogModule' is declared here.
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.module.ts:14:38 - error TS2306: File '/home/ubuntu/formbuilder/src/components/form-control/json-preview-dialog/json-preview-dialog.ts' is not a module.
+
+14 import { AswJsonPreviewDialog } from './json-preview-dialog';
+                                        ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.module.ts:22:19 - error NG1010: Value
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:1:1 - error TS2304: Cannot find name 'JsonData'.
+
+1 JsonData(): void {
+  ~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:1:11 - error TS1005: ';' expected.
+
+1 JsonData(): void {
+            ~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:2:5 - error TS18004: No value exists in scope for the shorthand property 'let'. Either declare one or provide an initializer.
+
+2     let htmlCode = '';
+      ~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:2:9 - error TS1005: ',' expected.
+
+2     let htmlCode = '';
+          ~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:2:22 - error TS1005: ',' expected.
+
+2     let htmlCode = '';
+                       ~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:3:5 - error TS18004: No value exists in scope for the shorthand property 'let'. Either declare one or provide an initializer.
+
+3     let currentRowColumnSum = 0;
+      ~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:3:9 - error TS1005: ',' expected.
+
+3     let currentRowColumnSum = 0;
+          ~~~~~~~~~~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:3:32 - error TS1005: ',' expected.
+
+3     let currentRowColumnSum = 0;
+                                 ~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:4:5 - error TS18004: No value exists in scope for the shorthand property 'let'. Either declare one or provide an initializer.
+
+4     let currentRowHtml = '';
+      ~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:4:9 - error TS1005: ',' expected.
+
+4     let currentRowHtml = '';
+          ~~~~~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:4:28 - error TS1005: ',' expected.
+
+4     let currentRowHtml = '';
+                             ~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:6:9 - error TS1005: ':' expected.
+
+6     this.data.forEach((control: any, index: number) => {
+          ~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:13:13 - error TS2304: Cannot find name 'currentRowColumnSum'.
+
+13         if (currentRowColumnSum + columnSize > 12) {
+               ~~~~~~~~~~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:14:13 - error TS2304: Cannot find name 'htmlCode'.
+
+14             htmlCode += `<div class="row">${currentRowHtml}</div>\n`;
+               ~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:14:45 - error TS2304: Cannot find name 'currentRowHtml'.
+
+14             htmlCode += `<div class="row">${currentRowHtml}</div>\n`;
+                                               ~~~~~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:16:13 - error TS2304: Cannot find name 'currentRowColumnSum'.
+
+16             currentRowColumnSum = 0;
+               ~~~~~~~~~~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:17:13 - error TS2304: Cannot find name 'currentRowHtml'.
+
+17             currentRowHtml = '';
+               ~~~~~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:20:9 - error TS2304: Cannot find name 'currentRowColumnSum'.
+
+20         currentRowColumnSum += columnSize;
+           ~~~~~~~~~~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:24:17 - error TS2304: Cannot find name 'currentRowHtml'.
+
+24                 currentRowHtml += `
+                   ~~~~~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:31:17 - error TS2304: Cannot find name 'currentRowHtml'.
+
+31                 currentRowHtml += `
+                   ~~~~~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:42:17 - error TS2304: Cannot find name 'currentRowHtml'.
+
+42                 currentRowHtml += `
+                   ~~~~~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:53:17 - error TS2304: Cannot find name 'currentRowHtml'.
+
+53                 currentRowHtml += `
+                   ~~~~~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:63:17 - error TS2304: Cannot find name 'currentRowHtml'.
+
+63                 currentRowHtml += `
+                   ~~~~~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:76:17 - error TS2304: Cannot find name 'currentRowHtml'.
+
+76                 currentRowHtml += `
+                   ~~~~~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:92:23 - error TS7041: The containing arrow function captures the global value of 'this'.
+
+92         if (index === this.data.length - 1) {
+                         ~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:92:28 - error TS7017: Element implicitly has an 'any' type because type 'typeof globalThis' has no index signature.
+
+92         if (index === this.data.length - 1) {
+                              ~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:93:13 - error TS2304: Cannot find name 'htmlCode'.
+
+93             htmlCode += `<div class="row">${currentRowHtml}</div>\n`;
+               ~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:93:45 - error TS2304: Cannot find name 'currentRowHtml'.
+
+93             htmlCode += `<div class="row">${currentRowHtml}</div>\n`;
+                                               ~~~~~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:95:7 - error TS1005: ',' expected.
+
+95     });
+         ~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:97:9 - error TS7006: Parameter 'currentRowHtml' implicitly has an 'any' type.
+
+97     if (currentRowHtml !== '') {
+           ~~~~~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:97:24 - error TS1005: ',' expected.
+
+97     if (currentRowHtml !== '') {
+                          ~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:97:30 - error TS1005: ';' expected.
+
+97     if (currentRowHtml !== '') {
+                                ~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:98:9 - error TS2304: Cannot find name 'htmlCode'.
+
+98         htmlCode += `<div class="row">${currentRowHtml}</div>\n`;
+           ~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:98:41 - error TS2304: Cannot find name 'currentRowHtml'.
+
+98         htmlCode += `<div class="row">${currentRowHtml}</div>\n`;
+                                           ~~~~~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:101:10 - error TS7017: Element implicitly has an 'any' type because type 'typeof globalThis' has no index signature.
+
+101     this.formattedHtmlCode = htmlCode;  // Store the formatted HTML code for display
+             ~~~~~~~~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:101:30 - error TS2304: Cannot find name 'htmlCode'.
+
+101     this.formattedHtmlCode = htmlCode;  // Store the formatted HTML code for display
+                                 ~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:102:17 - error TS2304: Cannot find name 'htmlCode'.
+
+102     console.log(htmlCode);
+                    ~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:103:1 - error TS1128: Declaration or statement expected.
+
+103 }
+    ~
+
+
+Error: src/components/form-control/json-preview-dialog/public_api.ts:9:15 - error TS2306: File '/home/ubuntu/formbuilder/src/components/form-control/json-preview-dialog/json-preview-dialog.ts' is not a module.
+
+9 export * from './json-preview-dialog';
+                ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Error: src/demo/app.module.ts:38:9 - error NG6002: This import contains errors, which may affect components that depend on this NgModule.
+
+38         AswFormBuilderModule,
+           ~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:47:09.230Z - Hash: 2f243ccd5182cddb - Time: 1437ms
+
+Error: src/components/form-builder/form-builder.module.ts:73:9 - error NG6002: 'AswJsonPreviewDialogModule' does not appear to be an NgModule class.
+
+73         AswJsonPreviewDialogModule,
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/components/form-control/json-preview-dialog/json-preview-dialog.module.ts:29:14
+    29 export class AswJsonPreviewDialogModule { }
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Is it missing an @NgModule annotation?
+
+
+Error: src/demo/app.module.ts:38:9 - error NG6002: This import contains errors, which may affect components that depend on this NgModule.
+
+38         AswFormBuilderModule,
+           ~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:47:14.642Z - Hash: 18b1a40a21d6c9c3 - Time: 1176ms
+
+Error: src/components/form-builder/form-builder.module.ts:73:9 - error NG6002: 'AswJsonPreviewDialogModule' does not appear to be an NgModule class.
+
+73         AswJsonPreviewDialogModule,
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/components/form-control/json-preview-dialog/json-preview-dialog.module.ts:29:14
+    29 export class AswJsonPreviewDialogModule { }
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Is it missing an @NgModule annotation?
+
+
+Error: src/demo/app.module.ts:38:9 - error NG6002: This import contains errors, which may affect components that depend on this NgModule.
+
+38         AswFormBuilderModule,
+           ~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+✖ Failed to compile.
+Killed
+
+> @asoftwareworld/form-builder@5.1.1 start
+> ng serve --host 0.0.0.0 --port 4200
+
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+- Generating browser application bundles (phase: setup)...
+    TypeScript compiler options "target" and "useDefineForClassFields" are set to "ES2022" and "false" respectively by the Angular CLI. To control ECMA version and features use the Browerslist configuration. For more information, see https://angular.io/guide/build#configuring-browser-compatibility
+    NOTE: You can set the "target" to "ES2022" in the project's tsconfig to remove this warning.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files   | Names         |  Raw Size
+vendor.js             | vendor        |   6.27 MB |
+main.js               | main          |   1.19 MB |
+polyfills.js          | polyfills     | 347.64 kB |
+styles.css, styles.js | styles        | 322.58 kB |
+runtime.js            | runtime       |   6.53 kB |
+
+| Initial Total |   8.12 MB
+
+Build at: 2024-10-24T08:48:33.453Z - Hash: 9e4cb72cd834167c - Time: 20045ms
+
+Warning: /home/ubuntu/formbuilder/src/components/image-drawing/image-drawing.ts depends on 'fabric'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+
+
+** Angular Live Development Server is listening on 0.0.0.0:4200, open your browser on http://localhost:4200/ **
+
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:55:37.363Z - Hash: f3a3a4841c0a0c3f - Time: 6080ms
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.html:24:14 - error TS2322: Type '{ "": any; }' is not assignable to type 'string'.
+
+24             [cdkCopyToClipboard]={{formattedHtmlCode}}
+                ~~~~~~~~~~~~~~~~~~
+
+  src/components/form-control/json-preview-dialog/json-preview-dialog.ts:6:18
+    6     templateUrl: './json-preview-dialog.html',
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component AswJsonPreviewDialog.
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.html:24:34 - error NG5002: Parser Error: Got interpolation ({{}}) where expression was expected
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.html:24:34 - error NG5002: Parser Error: Unexpected token '}'
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.html:24:34 - error NG5002: Parser Error: Unexpected token {, expected identifier, keyword, or string
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:55:48.198Z - Hash: 5bb7ca5262491e74 - Time: 1524ms
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.html:2:37 - error TS2339: Property 'sanitizedHtml' does not exist on type 'AswJsonPreviewDialog'.
+
+2     <pre id="jsonPreviewContent">{{ sanitizedHtml }}</pre>
+                                      ~~~~~~~~~~~~~
+
+  src/components/form-control/json-preview-dialog/json-preview-dialog.ts:6:18
+    6     templateUrl: './json-preview-dialog.html',
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component AswJsonPreviewDialog.
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:55:49.805Z - Hash: d71c37c09c9a7aa8 - Time: 1219ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:55:54.179Z - Hash: 179a470f792afedd - Time: 1290ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:57:49.603Z - Hash: b9abc5674d8cab91 - Time: 2638ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T08:58:19.217Z - Hash: 1852218065062614 - Time: 1502ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:03:12.413Z - Hash: a5f990d9f7ef0cc3 - Time: 2358ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:03:51.431Z - Hash: e5e261ed06cd9462 - Time: 1509ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:06:05.539Z - Hash: b9eaed1151b83104 - Time: 1605ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:07:31.104Z - Hash: 7b68d54927515b8e - Time: 1574ms
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:31:51 - error TS1121: Octal literals are not allowed. Use the syntax '0o12'.
+
+31             if (currentRowColumnSum + columnSize >012) {
+                                                     ~~~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:07:33.364Z - Hash: 5aad860aa6644f93 - Time: 1384ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:08:24.408Z - Hash: 1ff50ecc91fe0fb7 - Time: 1669ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:10:56.071Z - Hash: b28a7693375ac25d - Time: 1753ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:14:08.171Z - Hash: bb8ed201cbe1af28 - Time: 1961ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:15:47.829Z - Hash: 44b704c127ac7e8c - Time: 1756ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:16:49.330Z - Hash: e94781444db4f3ec - Time: 1576ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:17:37.130Z - Hash: ef5dd1708c4d893c - Time: 1644ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:17:39.767Z - Hash: 753e860a9358495c - Time: 1196ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:18:15.817Z - Hash: 0a1a1a2a0ae35d4f - Time: 1476ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:18:56.706Z - Hash: 2648faf55bc7fb9d - Time: 1801ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:18:58.349Z - Hash: 4d1b2a4f70c3980d - Time: 1357ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:19:09.247Z - Hash: 539fbfb91c940f79 - Time: 1330ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:19:12.107Z - Hash: 191a442eeef20a94 - Time: 1125ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:19:17.769Z - Hash: 2497c0f1a679abf2 - Time: 1288ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:19:22.299Z - Hash: a3e742b0d37accf6 - Time: 1238ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:19:28.075Z - Hash: 8c7bf294d8b2094c - Time: 1135ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:19:30.838Z - Hash: c1ca60c1f8b30465 - Time: 1251ms
+
+./src/components/form-builder/form-builder.ts:932:39-59 - Error: export 'AswJsonPreviewDialog' (imported as 'AswJsonPreviewDialog') was not found in '@asoftwareworld/form-builder/form-control/json-preview-dialog' (possible exports: AswJsonPreviewDialogModule)
+
+./src/components/form-control/json-preview-dialog/json-preview-dialog.ts - Error: Module build failed (from ./node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):
+SyntaxError: /home/ubuntu/formbuilder/src/components/form-control/json-preview-dialog/json-preview-dialog.ts: Unexpected token (131:1)
+
+  129 |         } }, dependencies: [i1.MatDialogContent, i1.MatDialogActions, i2.CdkCopyToClipboard, i3.JsonPipe], encapsulation: 2 }); }
+  130 | }
+> 131 |  !== '';
+      |  ^
+  132 | {
+  133 |     htmlCode += `<div class="row">${currentRowHtml}</div>\n`;
+  134 | }
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:34:51 - error TS1005: ')' expected.
+
+34             if (currentRowColumnSum + columnSize  12) {
+                                                     ~~
+
+  src/components/form-control/json-preview-dialog/json-preview-dialog.ts:34:16
+    34             if (currentRowColumnSum + columnSize  12) {
+                      ~
+    The parser expected to find a ')' to match the '(' token here.
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:34:53 - error TS1005: ';' expected.
+
+34             if (currentRowColumnSum + columnSize  12) {
+                                                       ~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:34:55 - error TS1005: ';' expected.
+
+34             if (currentRowColumnSum + columnSize  12) {
+                                                         ~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:40:36 - error TS2304: Cannot find name 'columnSize'.
+
+40             currentRowColumnSum += columnSize;
+                                      ~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:42:21 - error TS2304: Cannot find name 'control'.
+
+42             switch (control.controlType) {
+                       ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:45:39 - error TS2304: Cannot find name 'control'.
+
+45                         <div class="${control.column} ${control.customClass}">
+                                         ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:45:57 - error TS2304: Cannot find name 'control'.
+
+45                         <div class="${control.column} ${control.customClass}">
+                                                           ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:46:32 - error TS2304: Cannot find name 'control'.
+
+46                             <${control.subtype} class="${control.style}">${control.label}</${control.subtype}>
+                                  ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:46:58 - error TS2304: Cannot find name 'control'.
+
+46                             <${control.subtype} class="${control.style}">${control.label}</${control.subtype}>
+                                                            ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:46:76 - error TS2304: Cannot find name 'control'.
+
+46                             <${control.subtype} class="${control.style}">${control.label}</${control.subtype}>
+                                                                              ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:46:94 - error TS2304: Cannot find name 'control'.
+
+46                             <${control.subtype} class="${control.style}">${control.label}</${control.subtype}>
+                                                                                                ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:52:39 - error TS2304: Cannot find name 'control'.
+
+52                         <div class="${control.column} ${control.customClass}">
+                                         ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:52:57 - error TS2304: Cannot find name 'control'.
+
+52                         <div class="${control.column} ${control.customClass}">
+                                                           ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:53:43 - error TS2304: Cannot find name 'control'.
+
+53                             <label for="${control.id}">${control.label}</label>
+                                             ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:53:58 - error TS2304: Cannot find name 'control'.
+
+53                             <label for="${control.id}">${control.label}</label>
+                                                            ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:54:54 - error TS2304: Cannot find name 'control'.
+
+54                             <input type="text" id="${control.id}" class="form-control"
+                                                        ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:55:48 - error TS2304: Cannot find name 'control'.
+
+55                                 placeholder="${control.tooltip}"
+                                                  ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:56:46 - error TS2304: Cannot find name 'control'.
+
+56                                 maxlength="${control.maxlength}"${control.isRequired ? ' required' : ''}${control.isDisabled ? ' disabled' : ''}>
+                                                ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:56:67 - error TS2304: Cannot find name 'control'.
+
+56                                 maxlength="${control.maxlength}"${control.isRequired ? ' required' : ''}${control.isDisabled ? ' disabled' : ''}>
+                                                                     ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:56:107 - error TS2304: Cannot find name 'control'.
+
+56                                 maxlength="${control.maxlength}"${control.isRequired ? ' required' : ''}${control.isDisabled ? ' disabled' : ''}>
+                                                                                                             ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:63:39 - error TS2304: Cannot find name 'control'.
+
+63                         <div class="${control.column} ${control.customClass}">
+                                         ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:63:57 - error TS2304: Cannot find name 'control'.
+
+63                         <div class="${control.column} ${control.customClass}">
+                                                           ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:64:43 - error TS2304: Cannot find name 'control'.
+
+64                             <label for="${control.id}">${control.label}</label>
+                                             ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:64:58 - error TS2304: Cannot find name 'control'.
+
+64                             <label for="${control.id}">${control.label}</label>
+                                                            ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:65:56 - error TS2304: Cannot find name 'control'.
+
+65                             <input type="number" id="${control.id}" class="form-control"
+                                                          ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:66:48 - error TS2304: Cannot find name 'control'.
+
+66                                 placeholder="${control.tooltip}"
+                                                  ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:67:46 - error TS2304: Cannot find name 'control'.
+
+67                                 maxlength="${control.maxlength}"${control.isRequired ? ' required' : ''}${control.isDisabled ? ' disabled' : ''}>
+                                                ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:67:67 - error TS2304: Cannot find name 'control'.
+
+67                                 maxlength="${control.maxlength}"${control.isRequired ? ' required' : ''}${control.isDisabled ? ' disabled' : ''}>
+                                                                     ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:67:107 - error TS2304: Cannot find name 'control'.
+
+67                                 maxlength="${control.maxlength}"${control.isRequired ? ' required' : ''}${control.isDisabled ? ' disabled' : ''}>
+                                                                                                             ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:74:39 - error TS2304: Cannot find name 'control'.
+
+74                         <div class="${control.column} ${control.customClass}">
+                                         ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:74:57 - error TS2304: Cannot find name 'control'.
+
+74                         <div class="${control.column} ${control.customClass}">
+                                                           ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:75:43 - error TS2304: Cannot find name 'control'.
+
+75                             <button id="${control.id}" class="btn btn-${control.color}">
+                                             ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:75:73 - error TS2304: Cannot find name 'control'.
+
+75                             <button id="${control.id}" class="btn btn-${control.color}">
+                                                                           ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:76:35 - error TS2304: Cannot find name 'control'.
+
+76                                 ${control.label}
+                                     ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:84:39 - error TS2304: Cannot find name 'control'.
+
+84                         <div class="${control.column} ${control.customClass}">
+                                         ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:84:57 - error TS2304: Cannot find name 'control'.
+
+84                         <div class="${control.column} ${control.customClass}">
+                                                           ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:85:38 - error TS2304: Cannot find name 'control'.
+
+85                             <label>${control.label}</label>
+                                        ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:86:31 - error TS2304: Cannot find name 'control'.
+
+86                             ${control.options.map((option: any) => `
+                                 ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:88:90 - error TS2304: Cannot find name 'control'.
+
+88                                     <input class="form-check-input" type="radio" name="${control.id}" id="${option.key}" value="${option.value}"${option.isChecked ? ' checked' : ''}>
+                                                                                            ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:97:39 - error TS2304: Cannot find name 'control'.
+
+97                         <div class="${control.column} ${control.customClass}">
+                                         ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:97:57 - error TS2304: Cannot find name 'control'.
+
+97                         <div class="${control.column} ${control.customClass}">
+                                                           ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:98:38 - error TS2304: Cannot find name 'control'.
+
+98                             <label>${control.label}</label>
+                                        ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:99:31 - error TS2304: Cannot find name 'control'.
+
+99                             ${control.options.map((option: any) => `
+                                 ~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:113:17 - error TS2304: Cannot find name 'index'.
+
+113             if (index === this.data.length - 1) {
+                    ~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:116:10 - error TS1068: Unexpected token. A constructor, method, accessor, or property was expected.
+
+116         });
+             ~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:119:9 - error TS7010: 'if', which lacks return-type annotation, implicitly has an 'any' return type.
+
+119         if (currentRowHtml !== '') {
+            ~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:119:13 - error TS7006: Parameter 'currentRowHtml' implicitly has an 'any' type.
+
+119         if (currentRowHtml !== '') {
+                ~~~~~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:119:28 - error TS1005: ',' expected.
+
+119         if (currentRowHtml !== '') {
+                               ~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:119:34 - error TS1005: ';' expected.
+
+119         if (currentRowHtml !== '') {
+                                     ~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:120:13 - error TS2304: Cannot find name 'htmlCode'.
+
+120             htmlCode += `<div class="row">${currentRowHtml}</div>\n`;
+                ~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:120:45 - error TS2304: Cannot find name 'currentRowHtml'.
+
+120             htmlCode += `<div class="row">${currentRowHtml}</div>\n`;
+                                                ~~~~~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:123:9 - error TS2532: Object is possibly 'undefined'.
+
+123         this.formattedHtmlCode = htmlCode;  // Store the formatted HTML code for display
+            ~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:123:34 - error TS2304: Cannot find name 'htmlCode'.
+
+123         this.formattedHtmlCode = htmlCode;  // Store the formatted HTML code for display
+                                     ~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:124:21 - error TS2304: Cannot find name 'htmlCode'.
+
+124         console.log(htmlCode);
+                        ~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:125:5 - error TS1128: Declaration or statement expected.
+
+125     }
+        ~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:126:1 - error TS1128: Declaration or statement expected.
+
+126 }
+    ~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:19:33.623Z - Hash: c06bc0de5973971d - Time: 1329ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:20:14.456Z - Hash: 2ed87f27e0776318 - Time: 1505ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:20:39.566Z - Hash: 3b6685799917ddba - Time: 1488ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:21:12.664Z - Hash: 191a442eeef20a94 - Time: 1410ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:21:39.198Z - Hash: 688dd0b86a4be32c - Time: 1512ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:24:03.034Z - Hash: c0f505283bd7e89f - Time: 1701ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:25:42.863Z - Hash: 2bd4cdb74a01d266 - Time: 1703ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:27:22.271Z - Hash: 21737ffbc9320396 - Time: 1745ms
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.html:17:14 - error TS2339: Property 'JsonData' does not exist on type 'AswJsonPreviewDialog'.
+
+17     (click)="JsonData()">
+                ~~~~~~~~
+
+  src/components/form-control/json-preview-dialog/json-preview-dialog.ts:6:18
+    6     templateUrl: './json-preview-dialog.html',
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component AswJsonPreviewDialog.
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:27:34.863Z - Hash: 2c1ad971af46d057 - Time: 1373ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:29:09.728Z - Hash: b6580d0953c213de - Time: 1617ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:29:13.933Z - Hash: 6568b08045f46aad - Time: 1213ms
+
+./src/components/form-builder/form-builder.ts:932:39-59 - Error: export 'AswJsonPreviewDialog' (imported as 'AswJsonPreviewDialog') was not found in '@asoftwareworld/form-builder/form-control/json-preview-dialog' (possible exports: AswJsonPreviewDialogModule)
+
+./src/components/form-control/json-preview-dialog/json-preview-dialog.ts - Error: Module build failed (from ./node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):
+SyntaxError: /home/ubuntu/formbuilder/src/components/form-control/json-preview-dialog/json-preview-dialog.ts: Unexpected token (134:1)
+
+  132 |         } }, dependencies: [i1.MatDialogContent, i1.MatDialogActions, i2.CdkCopyToClipboard, i3.JsonPipe], encapsulation: 2 }); }
+  133 | }
+> 134 |  !== '';
+      |  ^
+  135 | {
+  136 |     htmlCode += `<div class="row">${currentRowHtml}</div>\n`;
+  137 | }
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:113:38 - error TS1005: ')' expected.
+
+113             if (currentRowColumnSum  12) {
+                                         ~~
+
+  src/components/form-control/json-preview-dialog/json-preview-dialog.ts:113:16
+    113             if (currentRowColumnSum  12) {
+                       ~
+    The parser expected to find a ')' to match the '(' token here.
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:113:40 - error TS1005: ';' expected.
+
+113             if (currentRowColumnSum  12) {
+                                           ~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:113:42 - error TS1005: ';' expected.
+
+113             if (currentRowColumnSum  12) {
+                                             ~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:119:17 - error TS2304: Cannot find name 'index'.
+
+119             if (index === this.data.length - 1) {
+                    ~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:122:10 - error TS1068: Unexpected token. A constructor, method, accessor, or property was expected.
+
+122         });
+             ~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:125:9 - error TS7010: 'if', which lacks return-type annotation, implicitly has an 'any' return type.
+
+125         if (currentRowHtml !== '') {
+            ~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:125:13 - error TS7006: Parameter 'currentRowHtml' implicitly has an 'any' type.
+
+125         if (currentRowHtml !== '') {
+                ~~~~~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:125:28 - error TS1005: ',' expected.
+
+125         if (currentRowHtml !== '') {
+                               ~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:125:34 - error TS1005: ';' expected.
+
+125         if (currentRowHtml !== '') {
+                                     ~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:126:13 - error TS2304: Cannot find name 'htmlCode'.
+
+126             htmlCode += `<div class="row">${currentRowHtml}</div>\n`;
+                ~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:126:45 - error TS2304: Cannot find name 'currentRowHtml'.
+
+126             htmlCode += `<div class="row">${currentRowHtml}</div>\n`;
+                                                ~~~~~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:129:9 - error TS2532: Object is possibly 'undefined'.
+
+129         this.formattedHtmlCode = htmlCode;  // Store the formatted HTML code for display
+            ~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:129:34 - error TS2304: Cannot find name 'htmlCode'.
+
+129         this.formattedHtmlCode = htmlCode;  // Store the formatted HTML code for display
+                                     ~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:130:21 - error TS2304: Cannot find name 'htmlCode'.
+
+130         console.log(htmlCode);
+                        ~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:131:5 - error TS1128: Declaration or statement expected.
+
+131     }
+        ~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:132:1 - error TS1128: Declaration or statement expected.
+
+132 }
+    ~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+runtime.js          | runtime |  6.53 kB |
+
+4 unchanged chunks
+
+Build at: 2024-10-24T09:29:15.036Z - Hash: b0a337243b19124d - Time: 1000ms
+
+./src/components/form-builder/form-builder.ts:932:39-59 - Error: export 'AswJsonPreviewDialog' (imported as 'AswJsonPreviewDialog') was not found in '@asoftwareworld/form-builder/form-control/json-preview-dialog' (possible exports: AswJsonPreviewDialogModule)
+
+./src/components/form-control/json-preview-dialog/json-preview-dialog.ts - Error: Module build failed (from ./node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):
+SyntaxError: /home/ubuntu/formbuilder/src/components/form-control/json-preview-dialog/json-preview-dialog.ts: Unexpected token (134:1)
+
+  132 |         } }, dependencies: [i1.MatDialogContent, i1.MatDialogActions, i2.CdkCopyToClipboard, i3.JsonPipe], encapsulation: 2 }); }
+  133 | }
+> 134 |  !== '';
+      |  ^
+  135 | {
+  136 |     htmlCode += `<div class="row">${currentRowHtml}</div>\n`;
+  137 | }
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:113:37 - error TS1005: ')' expected.
+
+113             if (currentRowColumnSum 12) {
+                                        ~~
+
+  src/components/form-control/json-preview-dialog/json-preview-dialog.ts:113:16
+    113             if (currentRowColumnSum 12) {
+                       ~
+    The parser expected to find a ')' to match the '(' token here.
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:113:39 - error TS1005: ';' expected.
+
+113             if (currentRowColumnSum 12) {
+                                          ~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:113:41 - error TS1005: ';' expected.
+
+113             if (currentRowColumnSum 12) {
+                                            ~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:119:17 - error TS2304: Cannot find name 'index'.
+
+119             if (index === this.data.length - 1) {
+                    ~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:122:10 - error TS1068: Unexpected token. A constructor, method, accessor, or property was expected.
+
+122         });
+             ~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:125:9 - error TS7010: 'if', which lacks return-type annotation, implicitly has an 'any' return type.
+
+125         if (currentRowHtml !== '') {
+            ~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:125:13 - error TS7006: Parameter 'currentRowHtml' implicitly has an 'any' type.
+
+125         if (currentRowHtml !== '') {
+                ~~~~~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:125:28 - error TS1005: ',' expected.
+
+125         if (currentRowHtml !== '') {
+                               ~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:125:34 - error TS1005: ';' expected.
+
+125         if (currentRowHtml !== '') {
+                                     ~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:126:13 - error TS2304: Cannot find name 'htmlCode'.
+
+126             htmlCode += `<div class="row">${currentRowHtml}</div>\n`;
+                ~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:126:45 - error TS2304: Cannot find name 'currentRowHtml'.
+
+126             htmlCode += `<div class="row">${currentRowHtml}</div>\n`;
+                                                ~~~~~~~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:129:9 - error TS2532: Object is possibly 'undefined'.
+
+129         this.formattedHtmlCode = htmlCode;  // Store the formatted HTML code for display
+            ~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:129:34 - error TS2304: Cannot find name 'htmlCode'.
+
+129         this.formattedHtmlCode = htmlCode;  // Store the formatted HTML code for display
+                                     ~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:130:21 - error TS2304: Cannot find name 'htmlCode'.
+
+130         console.log(htmlCode);
+                        ~~~~~~~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:131:5 - error TS1128: Declaration or statement expected.
+
+131     }
+        ~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:132:1 - error TS1128: Declaration or statement expected.
+
+132 }
+    ~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:29:19.542Z - Hash: 889f91169c1e9290 - Time: 1373ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:29:20.837Z - Hash: 2db7d7b802b20f65 - Time: 1232ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:29:25.268Z - Hash: d0a03bafb7758e58 - Time: 1135ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:29:28.230Z - Hash: bd9884b1077250f7 - Time: 1213ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:29:29.851Z - Hash: ee2237490863ccb8 - Time: 1020ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:29:47.630Z - Hash: b67dd8ea7e44fb8d - Time: 1328ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:30:02.461Z - Hash: 67007c1afa536503 - Time: 1232ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:30:32.701Z - Hash: d92bb9159087dddc - Time: 1465ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:31:20.496Z - Hash: ad469c59e13769aa - Time: 1495ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:31:35.407Z - Hash: 5725317a8adad910 - Time: 1442ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:31:42.598Z - Hash: 391e2633bc18110b - Time: 1187ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:31:45.820Z - Hash: 7c49601d0834c10f - Time: 1190ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:32:03.182Z - Hash: 5725317a8adad910 - Time: 1388ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:32:57.543Z - Hash: 0aff2a08bc9a8dc7 - Time: 1608ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:33:38.955Z - Hash: 03b25e3c040ea6c2 - Time: 1668ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:36:11.052Z - Hash: 242561da13e28a78 - Time: 1628ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:37:28.684Z - Hash: bfac4fd2e57c67ad - Time: 1867ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:38:02.487Z - Hash: 56192f1368792caf - Time: 1389ms
+
+./src/components/form-builder/form-builder.ts:932:39-59 - Error: export 'AswJsonPreviewDialog' (imported as 'AswJsonPreviewDialog') was not found in '@asoftwareworld/form-builder/form-control/json-preview-dialog' (possible exports: AswJsonPreviewDialogModule)
+
+./src/components/form-control/json-preview-dialog/json-preview-dialog.ts - Error: Module build failed (from ./node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):
+SyntaxError: /home/ubuntu/formbuilder/src/components/form-control/json-preview-dialog/json-preview-dialog.ts: Unexpected token (64:16)
+
+  62 |                 htmlCode += `<div class="row">${currentRowHtml}</div>\n`;
+  63 |             }
+> 64 |             if ()
+     |                 ^
+  65 |                 ;
+  66 |         });
+  67 |         // Add the last row if it hasn't been added yet
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:78:16 - error TS1109: Expression expected.
+
+78             if()
+                  ~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:79:9 - error TS1109: Expression expected.
+
+79         });
+           ~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:38:12.194Z - Hash: f9c786d2e87fb817 - Time: 1154ms
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:79:9 - error TS1109: Expression expected.
+
+79         });
+           ~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:38:14.823Z - Hash: edc692168b1ccd31 - Time: 1108ms
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:79:9 - error TS1109: Expression expected.
+
+79         });
+           ~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:38:18.479Z - Hash: 05834f9d07b3852d - Time: 1018ms
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:79:9 - error TS1109: Expression expected.
+
+79         });
+           ~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:38:26.906Z - Hash: e4c971480d3b9b08 - Time: 1163ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:39:00.007Z - Hash: 7449b5d3dcba56ec - Time: 1497ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:39:03.696Z - Hash: d0c1a41328c38366 - Time: 1246ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:39:23.206Z - Hash: ca825b25a2ff8885 - Time: 1289ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:39:29.263Z - Hash: f9dd083f10d18874 - Time: 1147ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:39:34.037Z - Hash: c20c4aefbb7b6c27 - Time: 1165ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:39:45.089Z - Hash: 696e6eca15101d61 - Time: 1324ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:40:02.875Z - Hash: c587d7cf5dc1cc61 - Time: 1377ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:40:11.688Z - Hash: 9fd26f7b6d142d33 - Time: 1135ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:40:24.636Z - Hash: 56ac7c6336fe48f9 - Time: 1153ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:41:11.409Z - Hash: f9dd083f10d18874 - Time: 1437ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:41:24.257Z - Hash: 19bc31dba937c57d - Time: 1211ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:41:56.977Z - Hash: 37d173c32bbc5ec1 - Time: 1532ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:42:05.079Z - Hash: 53d4588e37a2d38a - Time: 1323ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:43:03.237Z - Hash: 179bfafcd3d458dc - Time: 1430ms
+
+./src/components/form-builder/form-builder.ts:932:39-59 - Error: export 'AswJsonPreviewDialog' (imported as 'AswJsonPreviewDialog') was not found in '@asoftwareworld/form-builder/form-control/json-preview-dialog' (possible exports: AswJsonPreviewDialogModule)
+
+./src/components/form-control/json-preview-dialog/json-preview-dialog.ts - Error: Module build failed (from ./node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):
+SyntaxError: /home/ubuntu/formbuilder/src/components/form-control/json-preview-dialog/json-preview-dialog.ts: Unexpected token (97:16)
+
+   95 |                 htmlCode += `<div class="row">${currentRowHtml}</div>\n`;
+   96 |             }
+>  97 |             if ()
+      |                 ^
+   98 |                 ;
+   99 |         });
+  100 |         // Add the last row if it hasn't been added yet
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:114:16 - error TS1109: Expression expected.
+
+114             if()
+                   ~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:115:9 - error TS1109: Expression expected.
+
+115         });
+            ~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:43:08.000Z - Hash: 4435a9ad87717f1c - Time: 1200ms
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:114:16 - error TS2304: Cannot find name 'cu'.
+
+114             if(cu)
+                   ~~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:115:9 - error TS1109: Expression expected.
+
+115         });
+            ~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:43:09.202Z - Hash: 959f37b1cdf40044 - Time: 1103ms
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:115:9 - error TS1109: Expression expected.
+
+115         });
+            ~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:43:11.000Z - Hash: 2e3bb4b4c5666cd0 - Time: 1029ms
+
+./src/components/form-builder/form-builder.ts:932:39-59 - Error: export 'AswJsonPreviewDialog' (imported as 'AswJsonPreviewDialog') was not found in '@asoftwareworld/form-builder/form-control/json-preview-dialog' (possible exports: AswJsonPreviewDialogModule)
+
+./src/components/form-control/json-preview-dialog/json-preview-dialog.ts - Error: Module build failed (from ./node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):
+SyntaxError: /home/ubuntu/formbuilder/src/components/form-control/json-preview-dialog/json-preview-dialog.ts: Unexpected token (97:39)
+
+   95 |                 htmlCode += `<div class="row">${currentRowHtml}</div>\n`;
+   96 |             }
+>  97 |             if (currentRowColumnSum == )
+      |                                        ^
+   98 |                 ;
+   99 |         });
+  100 |         // Add the last row if it hasn't been added yet
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:114:37 - error TS1109: Expression expected.
+
+114             if(currentRowColumnSum==)
+                                        ~
+
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:115:9 - error TS1109: Expression expected.
+
+115         });
+            ~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:43:12.462Z - Hash: e08a7493e7d93e05 - Time: 1102ms
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:115:9 - error TS1109: Expression expected.
+
+115         });
+            ~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:43:16.801Z - Hash: f47af850d1f6f345 - Time: 1062ms
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:115:9 - error TS1109: Expression expected.
+
+115         });
+            ~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:43:20.763Z - Hash: 67894996ed05824f - Time: 1107ms
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:115:9 - error TS1109: Expression expected.
+
+115         });
+            ~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:45:03.424Z - Hash: 554b9be9c4305759 - Time: 1654ms
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:114:42 - error TS2304: Cannot find name 'cu'.
+
+114             if(currentRowColumnSum===12) cu
+                                             ~~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:45:05.302Z - Hash: 80f08f5fdd062384 - Time: 1192ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:45:07.749Z - Hash: 162439d8edea9ef2 - Time: 1200ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:45:28.674Z - Hash: e9b5243d048cb322 - Time: 1375ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:50:33.709Z - Hash: 96667c7f30d14b9d - Time: 1594ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:50:36.185Z - Hash: e71265b6dbe70148 - Time: 1232ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:50:40.400Z - Hash: a62bf3b5292feadd - Time: 1169ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:50:51.514Z - Hash: f2882dda989d729b - Time: 1220ms
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:37:25 - error TS2304: Cannot find name 'co'.
+
+37             console.log(co)
+                           ~~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:50:58.601Z - Hash: 0d36614c2f44c757 - Time: 1024ms
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:37:25 - error TS2304: Cannot find name 'c'.
+
+37             console.log(c)
+                           ~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:51:05.319Z - Hash: 722b2a33ded01947 - Time: 1105ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:51:09.435Z - Hash: 1bf225dcfb84986d - Time: 1037ms
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:36:36 - error TS1005: ';' expected.
+
+36             console.log(columnSize)''
+                                      ~~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:51:12.053Z - Hash: b2361ad28f6d3a84 - Time: 1059ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:52:35.633Z - Hash: a4b62fdbd0460b6a - Time: 1565ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T09:52:39.354Z - Hash: 263bff3904d17ef1 - Time: 1271ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:10:35.184Z - Hash: a4001cfb34ad0312 - Time: 2106ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:12:16.853Z - Hash: ea27608dc8d05070 - Time: 2158ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:14:02.144Z - Hash: ad9e8ddceb3aeeb7 - Time: 2095ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:15:51.930Z - Hash: 969e4c246068be6a - Time: 3248ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:15:53.924Z - Hash: 1403b467e60893b0 - Time: 1887ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:16:07.112Z - Hash: 44cf6fb58c067b64 - Time: 1462ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:16:12.405Z - Hash: 264a1758d2a04305 - Time: 1366ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:16:13.762Z - Hash: 1f7bda2d0c66efd0 - Time: 1291ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:16:16.992Z - Hash: 55eb23561673574a - Time: 1162ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:16:18.999Z - Hash: 67b748b48a6d63b9 - Time: 1189ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:16:25.169Z - Hash: d3877a35a3230134 - Time: 1240ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:31:15.343Z - Hash: 6d7f661fc3d5c294 - Time: 2542ms
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.html:17:14 - error TS2339: Property 'JsonData' does not exist on type 'AswJsonPreviewDialog'.
+
+17     (click)="JsonData()">
+                ~~~~~~~~
+
+  src/components/form-control/json-preview-dialog/json-preview-dialog.ts:6:18
+    6     templateUrl: './json-preview-dialog.html',
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component AswJsonPreviewDialog.
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:32:04.642Z - Hash: d24f5289a23c8bf7 - Time: 1573ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:32:51.013Z - Hash: 8595f466910fbc90 - Time: 1785ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:33:24.011Z - Hash: 710c7b8a6c37036a - Time: 1768ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:33:25.480Z - Hash: 9d4fe6a31e29a217 - Time: 1373ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:33:27.552Z - Hash: 59247c5fa31a4fa4 - Time: 1565ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:33:28.911Z - Hash: fa51cf8775292ca7 - Time: 1117ms
+
+./src/components/form-builder/form-builder.ts:932:39-59 - Error: export 'AswJsonPreviewDialog' (imported as 'AswJsonPreviewDialog') was not found in '@asoftwareworld/form-builder/form-control/json-preview-dialog' (possible exports: AswJsonPreviewDialogModule)
+
+./src/components/form-control/json-preview-dialog/json-preview-dialog.ts - Error: Module build failed (from ./node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):
+SyntaxError: /home/ubuntu/formbuilder/src/components/form-control/json-preview-dialog/json-preview-dialog.ts: Unexpected token (19:12)
+
+  17 |         let currentRowColumnSum = 0;
+  18 |         let currentRowHtml = [];
+> 19 |         if ()
+     |             ^
+  20 |             this.data.forEach((control, index) => {
+  21 |                 const columnSize = parseInt(control.column.split('-').pop() || '12', 10);
+  22 |                 // If adding the current control exceeds 12 columns, close the current row and start a new one
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:26:12 - error TS1109: Expression expected.
+
+26         if()
+              ~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:33:31.640Z - Hash: c8df1f7cf980c585 - Time: 1319ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:33:33.518Z - Hash: f523d64955a0a770 - Time: 1210ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:33:34.629Z - Hash: 50714ee7254acb26 - Time: 1042ms
+
+./src/components/form-builder/form-builder.ts:932:39-59 - Error: export 'AswJsonPreviewDialog' (imported as 'AswJsonPreviewDialog') was not found in '@asoftwareworld/form-builder/form-control/json-preview-dialog' (possible exports: AswJsonPreviewDialogModule)
+
+./src/components/form-control/json-preview-dialog/json-preview-dialog.ts - Error: Module build failed (from ./node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):
+SyntaxError: /home/ubuntu/formbuilder/src/components/form-control/json-preview-dialog/json-preview-dialog.ts: Unexpected token (19:22)
+
+  17 |         let currentRowColumnSum = 0;
+  18 |         let currentRowHtml = [];
+> 19 |         if (this.data.)
+     |                       ^
+  20 |             this.data.forEach((control, index) => {
+  21 |                 const columnSize = parseInt(control.column.split('-').pop() || '12', 10);
+  22 |                 // If adding the current control exceeds 12 columns, close the current row and start a new one
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:26:22 - error TS1003: Identifier expected.
+
+26         if(this.data.)
+                        ~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:33:38.575Z - Hash: 76327be2fcd6d453 - Time: 1307ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:33:40.018Z - Hash: 89e6b617ecb12b7b - Time: 1300ms
+
+./src/components/form-builder/form-builder.ts:932:39-59 - Error: export 'AswJsonPreviewDialog' (imported as 'AswJsonPreviewDialog') was not found in '@asoftwareworld/form-builder/form-control/json-preview-dialog' (possible exports: AswJsonPreviewDialogModule)
+
+./src/components/form-control/json-preview-dialog/json-preview-dialog.ts - Error: Module build failed (from ./node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):
+SyntaxError: /home/ubuntu/formbuilder/src/components/form-control/json-preview-dialog/json-preview-dialog.ts: Unexpected token (19:31)
+
+  17 |         let currentRowColumnSum = 0;
+  18 |         let currentRowHtml = [];
+> 19 |         if (this.data.length > )
+     |                                ^
+  20 |             this.data.forEach((control, index) => {
+  21 |                 const columnSize = parseInt(control.column.split('-').pop() || '12', 10);
+  22 |                 // If adding the current control exceeds 12 columns, close the current row and start a new one
+
+Error: src/components/form-control/json-preview-dialog/json-preview-dialog.ts:26:29 - error TS1109: Expression expected.
+
+26         if(this.data.length>)
+                               ~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:33:41.199Z - Hash: c451d973a02efcea - Time: 1073ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:33:42.901Z - Hash: dd819f861cbe84b1 - Time: 1109ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:33:46.624Z - Hash: 438220b572b48bea - Time: 1196ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:33:48.471Z - Hash: 0a324fb4e0e67f9b - Time: 1119ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:34:10.404Z - Hash: eb24d0d04ac32e69 - Time: 1337ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:34:42.228Z - Hash: 85f1325b0415c231 - Time: 1338ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:35:35.170Z - Hash: 9edec0f4dd1513f7 - Time: 2911ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:35:37.840Z - Hash: ff7c9e799ae5df7f - Time: 2264ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:35:41.572Z - Hash: c68cd1db37f6c5de - Time: 2200ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:35:52.780Z - Hash: 70e522c0e8123433 - Time: 2118ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:35:54.771Z - Hash: 83dc711e5811875e - Time: 1916ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:35:56.892Z - Hash: a3b6ca6a6778df25 - Time: 2047ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:41:41.747Z - Hash: 964e835b035aa6b9 - Time: 7047ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:43:07.193Z - Hash: 62da6b150e2ca2b6 - Time: 1825ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:44:36.727Z - Hash: 11481428c962aa3b - Time: 1564ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:44:38.706Z - Hash: c5abcf2da9e9ea43 - Time: 1401ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:44:40.342Z - Hash: 11481428c962aa3b - Time: 1284ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:44:42.250Z - Hash: bba7be57168ddc78 - Time: 1181ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:44:48.680Z - Hash: 11481428c962aa3b - Time: 1154ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:44:55.984Z - Hash: d2d6a76c95a569fc - Time: 1182ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:44:59.203Z - Hash: 6ff0e3f8302a3971 - Time: 1195ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:49:56.233Z - Hash: 9691921b23ba1d99 - Time: 10422ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:49:58.507Z - Hash: 992c4a45cd231c7f - Time: 2113ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:51:34.654Z - Hash: e643e9691ad7deb3 - Time: 2466ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:51:59.953Z - Hash: c0e47b13de55dd4f - Time: 2200ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T10:52:07.456Z - Hash: a8db113075f994c2 - Time: 1760ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T11:09:41.502Z - Hash: b4f543c59dfe1636 - Time: 3016ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T11:09:45.542Z - Hash: 14e84bfa6bd9865a - Time: 1431ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T11:10:45.479Z - Hash: 8069a1b102e09f22 - Time: 1591ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T11:10:58.889Z - Hash: de80fe77e9dd1779 - Time: 1411ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T11:11:16.737Z - Hash: 8069a1b102e09f22 - Time: 1587ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T11:11:18.657Z - Hash: b7cf5b049369b488 - Time: 1217ms
+
+✔ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.19 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T11:12:40.849Z - Hash: 220d53911e6c3442 - Time: 1646ms
+
+Error: src/demo/components/home/home.component.ts:41:12 - error TS2339: Property 'formContainer' does not exist on type 'HomeComponent'.
+
+41       this.formContainer = JSON.parse(data);
+              ~~~~~~~~~~~~~
+
+
+
+
+✖ Failed to compile.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   | Raw Size
+main.js             | main    |  1.18 MB |
+runtime.js          | runtime |  6.53 kB |
+
+3 unchanged chunks
+
+Build at: 2024-10-24T11:13:00.380Z - Hash: fd068bd97979d38c - Time: 1193ms
+
+✔ Compiled successfully.
